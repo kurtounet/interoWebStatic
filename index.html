@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ma super boucherie" />
+  <title>MeatBio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="/assets/meat.png" alt="La boucherie MeatBio" />
+    <nav>
+      <ul>
+        <li><a href="#presentation">MeatBio</a></li>
+        <li><a href="#produit">Nos produits</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+        <li><a href="#map">Nous localiser</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="intro">
+      <video controls autoplay="true" muted>
+        <source src="/assets/video.mp4" type="video/mp4">
+      </video>
+    </section>
+    <section id="presentation">
+      <img src="/assets/boucher.jpg" alt="Boucher de qualité">
+      <div>
+        <h1>MeatBio</h1>
+        <p>
+          Chez MeatBio, nous sommes fiers de vous offrir une sélection exquise de viandes de qualité, élevées de manière
+          <em>biologique</em> et respectueuse de l'environnement. Chaque coupe est choisie avec soin pour garantir une
+          expérience culinaire exceptionnelle, où le goût et la fraîcheur sont au rendez-vous. Découvrez notre boucherie
+          et laissez-vous séduire par la qualité de nos produits.
+        </p>
+      </div>
+    </section>
+    <section id="produit">
+      <h2>Nos produits</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="/assets/illustration-de-viande.webp" alt="Viande 1" />
+          <h3>Filet de bœuf bio.</h3>
+        </div>
+        <div class="grid-item">
+          <img src="/assets/illustration-de-viande.webp" alt="Côtelettes d'agneau" />
+          <h3>Côtelettes d'agneau.</h3>
+        </div>
+        <div class="grid-item">
+          <img src="/assets/illustration-de-viande.webp" alt="Filet mignon de porc" />
+          <h3>Filet mignon de porc.</h3>
+        </div>
+        <div class="grid-item">
+          <img src="/assets/illustration-de-viande.webp" alt="Magret de canard" />
+          <h3>Magret de canard.</h3>
+        </div>
+        <div class="grid-item">
+          <img src="/assets/illustration-de-viande.webp" alt="Poulet fermier" />
+          <h3>Poulet fermier.</h3>
+        </div>
+        <div class="grid-item">
+          <img src="/assets/illustration-de-viande.webp" alt="Steak haché de bœuf" />
+          <h3>Steak haché de bœuf.</h3>
+        </div>
+
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <form action="#" method="post">
+        <label for="firstname">Nom:</label>
+        <input type="text" id="firstname" name="firstname" required />
+
+        <label for="lastname">Prénom:</label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="phone">Téléphone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required />
+
+        <label for="message">Demande:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    <section id="map"></section>
+  </main>
+  <div id="scrollToTop"></div>
+  <a href="#presentation" class="back-to-top">Retour en haut</a>
+  <footer>
+    <p>&copy;MeatBio tous droit réservés</p>
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      var location = { lat: 45.7589, lng: 4.8414 }; // Coordonnées de Lyon
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: location,
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+Site one-page sur la boucherie MeatBio :
+
+Header contenant (le logo https://www.flaticon.com/free-icon/meat_2863644?term=meat&page=1&position=36&origin=search&related_id=2863644 
+et des ancres vers les différentes sections de la page)
+
+Video d'introduction : https://pixabay.com/fr/videos/bifteck-gril-viande-du-boeuf-16406/
+
+Le nom de la boucherie en titre principal, 
+une brève description qui met la boucherie en avant 
+(c'est une boucherie de qualité et bio) 
+
+Ajoutez des balises semantiques en ligne dans la description si besoin.
+
+Une photo de boucher à gauche du titre et de la description sur pc. 
+Sur mobile la photo est en dessous.
+
+Une liste des viandes proposées à la vente (au moins 6 au choix), 
+avec son nom et une photo pour chaque. Ceci doit être affiché sous forme de grille. 
+La grille doit faire une colonne sur mobile, 2 colonnes sur tablette et 3 colonne sur PC.
+
+Formulaire de contact (nom, prenom, telephone, mail, demande)
+
+Carte Google maps  vers 48 Rue Franklin, 69002 Lyon
+
+Un bouton pour retourner en haut du site fixé à 20% du bas de l'écran et 20px de la droite.
+
+https://www.flaticon.com/free-icon/meat_2863644?term=meat&page=1&position=36&origin=search&related_id=2863644
