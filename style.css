@@ -7,6 +7,14 @@ body {
 
 }
 
+video {
+    /* object-position: 50% 50%;*/
+    object-fit: cover;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -39,46 +47,33 @@ nav ul li a {
     text-decoration: none;
 }
 
-main video {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    object-fit: center;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-
-main #presentation {
+main section#presentation {
     margin: 1rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
 
-main #presentation h1 {
+main section#presentation h1 {
     width: 100%;
     text-align: center;
 
 }
 
-main #presentation p {
+main section#presentation p {
     width: 100%;
     text-align: justify;
     font-size: large;
 }
 
-main #presentation img {
+main section#presentation img {
     margin: 1rem;
-    object-fit: center;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
 }
 
-main #produit {
+main section#produit {
     margin: 1rem;
     text-align: center;
 }
@@ -112,17 +107,21 @@ main section#produit div.grid-container div.grid-item p {
 }
 
 /* Contact */
-main #contact {
+main section#contact {
     background-color: #e0e0e0;
+    padding: 0.5rem;
     color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 10px;
+    /*
     flex-direction: column;
-    justify-content: space-around;
-
-
+    justify-content: space-around;*/
 }
 
-main #contact div {
+
+main section#contact div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,43 +129,44 @@ main #contact div {
     width: 100%;
 }
 
-main #contact div form {
+main section#contact div form {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
+    padding: 0px 10px;
 }
 
-main #contact form label {
+main section#contact form label {
     width: 100%;
-    margin: 10px;
     font-weight: bold;
 }
 
-main #contact form input,
-main #contact form textarea {
-
-    margin: 10px 10px;
+main section#contact form input,
+main section#contact form textarea {
+    margin: 10px 0px;
     padding: 10px;
 }
 
-main #contact form button {
+main section#contact form button {
     background-color: #fff;
     color: #333;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 0px;
     cursor: pointer;
+    margin: 10px 0px;
 }
 
-main #contact form button:hover {
+main section#contact form button:hover {
     background-color: #ddd;
 }
 
-main #contact section #map {
-    height: 100%;
+
+main section#contact div#map iframe {
+    height: 600px;
     width: 100%;
 }
+
+
 
 footer {
     background-color: cadetblue;
@@ -199,14 +199,14 @@ footer {
         justify-content: space-between;
     }
 
-    main #presentation {
+    main section#presentation {
         flex-direction: row;
 
     }
 
-    main #presentation img {
+    main section#presentation img {
         margin: 1rem;
-        object-fit: center;
+        object-fit: cover;
         max-width: 50%;
         max-height: 50%;
     }
@@ -218,18 +218,11 @@ footer {
         grid-gap: 20px;
     }
 
-    main #contact {
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-
-    main #contact div {
-        width: 50%;
-    }
-
-    main #contact section #map {
-        width: 50%;
+    main section#contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
     }
 
 }
@@ -244,9 +237,8 @@ footer {
         grid-gap: 20px;
     }
 
-    main #presentation p {
+    main section#presentation p {
         font-size: x-large;
     }
-
 
 }
