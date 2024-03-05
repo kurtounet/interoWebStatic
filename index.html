@@ -70,47 +70,53 @@
       </div>
     </section>
     <section id="contact">
-      <h2>Contactez-nous</h2>
-      <form action="#" method="post">
-        <label for="firstname">Nom:</label>
-        <input type="text" id="firstname" name="firstname" required />
+      <div>
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+          <label for="firstname">Nom:</label>
+          <input type="text" id="firstname" name="firstname" required />
 
-        <label for="lastname">Prénom:</label>
-        <input type="text" id="lastname" name="lastname" required />
+          <label for="lastname">Prénom:</label>
+          <input type="text" id="lastname" name="lastname" required />
 
-        <label for="phone">Téléphone:</label>
-        <input type="tel" id="phone" name="phone" required />
+          <label for="phone">Téléphone:</label>
+          <input type="tel" id="phone" name="phone" required />
 
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="mail" required />
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="mail" required />
 
-        <label for="message">Demande:</label>
-        <textarea id="message" name="message" required></textarea>
+          <label for="message">Demande:</label>
+          <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Envoyer</button>
-      </form>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+      <section id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.9635633726716!2d4.828338911973699!3d45.75187641407758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4c5205e307%3A0x26778a49c589d46a!2s48%20Rue%20Franklin%2C%2069002%20Lyon%2C%20France!5e0!3m2!1sfr!2sau!4v1709616070213!5m2!1sfr!2sau"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
     </section>
-    <section id="map"></section>
+
+    <div id="scrollToTop">
+      <a href="#"><svg viewBox="0 0 24 24">
+          <g>
+            <path d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z" />
+            <polygon points="7.293 15.293 8.707 16.707 12 13.414 15.293 16.707 16.707 15.293 12 10.586 7.293 15.293" />
+            <polygon points="7.293 11.293 8.707 12.707 12 9.414 15.293 12.707 16.707 11.293 12 6.586 7.293 11.293" />
+          </g>
+        </svg></a>
+    </div>
   </main>
-  <div id="scrollToTop"></div>
-  <a href="#presentation" class="back-to-top">Retour en haut</a>
   <footer>
     <p>&copy;MeatBio tous droit réservés</p>
   </footer>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-  <script>
-    function initMap() {
-      var location = { lat: 45.7589, lng: 4.8414 }; // Coordonnées de Lyon
-      var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: location,
-      });
-      var marker = new google.maps.Marker({
-        position: location,
-        map: map,
-      });
-    }
-  </script>
+
+
+
 </body>
 
 </html>

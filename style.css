@@ -111,18 +111,26 @@ main section#produit div.grid-container div.grid-item p {
     margin: 1rem;
 }
 
-
-
 /* Contact */
 main #contact {
-    background-color: #333;
-    color: #fff;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-around;
+    color: black;
     padding: 20px;
 }
 
-main #contact form {
+main #contact div {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+}
+
+main #contact div form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 }
 
 main #contact form label {
@@ -151,7 +159,11 @@ main #contact form button:hover {
 }
 
 main #map {
+
+    height: 400px;
     width: 100%;
+
+
 }
 
 footer {
@@ -160,7 +172,25 @@ footer {
     justify-content: center;
 }
 
-@media screen and (min-width: 576px) {
+#scrollToTop {
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20%;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#scrollToTop svg {
+    fill: white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* Styles pour les tablettes */
     header {
         display: flex;
         flex-direction: row;
@@ -189,7 +219,7 @@ footer {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     /* Styles pour les PC */
     main section#produit div.grid-container {
