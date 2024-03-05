@@ -55,6 +55,7 @@ main section#presentation {
 }
 
 main section#presentation h1 {
+    font-size: 32px;
     width: 100%;
     text-align: center;
 
