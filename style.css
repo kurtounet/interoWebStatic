@@ -114,16 +114,20 @@ main section#produit div.grid-container div.grid-item p {
 /* Contact */
 main #contact {
     background-color: #e0e0e0;
-    display: flex;
-    justify-content: space-around;
     color: black;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
 }
 
 main #contact div {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 main #contact div form {
@@ -131,25 +135,26 @@ main #contact div form {
     flex-direction: column;
     width: 100%;
 
+
 }
 
 main #contact form label {
     width: 100%;
-    margin: 0px 10px;
+    margin: 10px;
     font-weight: bold;
 }
 
 main #contact form input,
 main #contact form textarea {
-    width: 100%;
-    margin-bottom: 10px;
+
+    margin: 10px 10px;
     padding: 10px;
 }
 
 main #contact form button {
     background-color: #fff;
     color: #333;
-    border: none;
+    width: 100%;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -158,12 +163,9 @@ main #contact form button:hover {
     background-color: #ddd;
 }
 
-main #map {
-
-    height: 400px;
+main #contact section #map {
+    height: 100%;
     width: 100%;
-
-
 }
 
 footer {
@@ -216,6 +218,19 @@ footer {
         grid-gap: 20px;
     }
 
+    main #contact {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    main #contact div {
+        width: 50%;
+    }
+
+    main #contact section #map {
+        width: 50%;
+    }
 
 }
 
@@ -232,4 +247,6 @@ footer {
     main #presentation p {
         font-size: x-large;
     }
+
+
 }
