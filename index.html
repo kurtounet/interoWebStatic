@@ -1,138 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ma super boucherie" />
-    <title>MeatBio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <img src="assets/meat.png" alt="La boucherie MeatBio" />
-      <nav>
-        <ul>
-          <li><a href="#presentation">MeatBio</a></li>
-          <li><a href="#produit">Nos produits</a></li>
-          <li><a href="#contact">Contactez-nous</a></li>
-          <li><a href="#map">Nous localiser</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div id="intro">
-        <video controls autoplay muted>
-          <source src="assets/video.mp4" type="video/mp4" />
-        </video>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ma super boucherie" />
+  <title>MeatBio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="assets/meat.webp" alt="La boucherie MeatBio" />
+    <nav>
+      <ul>
+        <li><a href="#presentation">MeatBio</a></li>
+        <li><a href="#produit">Nos produits</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+        <li><a href="#map">Nous localiser</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="intro">
+      <video controls autoplay muted>
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <section id="presentation">
+      <picture></picture>
+      <img src="assets/boucher.webp" alt="Boucher de qualité" />
+      <div>
+        <h1>MeatBio</h1>
+        <p>
+          Chez MeatBio, nous sommes fiers de vous offrir une sélection exquise
+          de viandes de qualité, élevées de manière
+          <strong>biologique et respectueuse de l'environnement.</strong>
+        </p>
+        <br />
+        <p>
+          Chaque coupe est choisie avec soin pour garantir une expérience
+          culinaire exceptionnelle, où le goût et la fraîcheur sont au
+          rendez-vous.
+        </p>
+        <br />
+        <p>
+          Découvrez notre boucherie et laissez-vous séduire par la qualité de
+          nos produits.
+        </p>
       </div>
-      <section id="presentation">
-        <picture></picture>
-        <img src="assets/boucher.jpg" alt="Boucher de qualité" />
-        <div>
-          <h1>MeatBio</h1>
-          <p>
-            Chez MeatBio, nous sommes fiers de vous offrir une sélection exquise
-            de viandes de qualité, élevées de manière
-            <strong>biologique et respectueuse de l'environnement.</strong>
-          </p>
-          <br />
-          <p>
-            Chaque coupe est choisie avec soin pour garantir une expérience
-            culinaire exceptionnelle, où le goût et la fraîcheur sont au
-            rendez-vous.
-          </p>
-          <br />
-          <p>
-            Découvrez notre boucherie et laissez-vous séduire par la qualité de
-            nos produits.
-          </p>
+    </section>
+    <section id="produit">
+      <h2>Nos produits</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="assets/filet-de-beauf.webp" alt="Filet de bœuf bio." />
+          <h3>Filet de bœuf bio.</h3>
         </div>
-      </section>
-      <section id="produit">
-        <h2>Nos produits</h2>
-        <div class="grid-container">
-          <div class="grid-item">
-            <img src="assets/filet-de-beauf.webp" alt="Filet de bœuf bio." />
-            <h3>Filet de bœuf bio.</h3>
-          </div>
-          <div class="grid-item">
-            <img
-              src="assets/cotelettes-agneau.jpeg"
-              alt="Côtelettes d'agneau"
-            />
-            <h3>Côtelettes d'agneau.</h3>
-          </div>
-          <div class="grid-item">
-            <img
-              src="assets/filet-mignon-de-porc.jpeg"
-              alt="Filet mignon de porc"
-            />
-            <h3>Filet mignon de porc.</h3>
-          </div>
-          <div class="grid-item">
-            <img src="assets/magret-de-canard.webp" alt="Magret de canard" />
-            <h3>Magret de canard.</h3>
-          </div>
-          <div class="grid-item">
-            <img src="assets/poulet-fermier.jpeg" alt="Poulet fermier" />
-            <h3>Poulet fermier.</h3>
-          </div>
-          <div class="grid-item">
-            <img src="assets/roti-de-cheval.jpeg" alt="Rôti de cheval" />
-            <h3>Rôti de cheval.</h3>
-          </div>
+        <div class="grid-item">
+          <img src="assets/cotelettes-agneau.webp" alt="Côtelettes d'agneau" />
+          <h3>Côtelettes d'agneau.</h3>
         </div>
-      </section>
-      <section id="contact">
-        <div id="form">
-          <h2>Contactez-nous</h2>
-          <form action="#" method="post">
-            <label for="firstname">Nom:</label>
-            <input type="text" id="firstname" name="firstname" required />
-
-            <label for="lastname">Prénom:</label>
-            <input type="text" id="lastname" name="lastname" required />
-
-            <label for="phone">Téléphone:</label>
-            <input type="tel" id="phone" name="phone" required />
-
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail" required />
-
-            <label for="message">Demande:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Envoyer</button>
-          </form>
+        <div class="grid-item">
+          <img src="assets/filet-mignon-de-porc.webp" alt="Filet mignon de porc" />
+          <h3>Filet mignon de porc.</h3>
         </div>
-        <div id="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.9635633726716!2d4.828338911973699!3d45.75187641407758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4c5205e307%3A0x26778a49c589d46a!2s48%20Rue%20Franklin%2C%2069002%20Lyon%2C%20France!5e0!3m2!1sfr!2sau!4v1709616070213!5m2!1sfr!2sau"
-            style="border: 0"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="grid-item">
+          <img src="assets/magret-de-canard.webp" alt="Magret de canard" />
+          <h3>Magret de canard.</h3>
         </div>
-      </section>
-      <div id="scrollToTop">
-        <a href="#"
-          ><svg viewBox="0 0 24 24">
-            <path
-              d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z"
-            />
-            <polygon
-              points="7.293 15.293 8.707 16.707 12 13.414 15.293 16.707 16.707 15.293 12 10.586 7.293 15.293"
-            />
-            <polygon
-              points="7.293 11.293 8.707 12.707 12 9.414 15.293 12.707 16.707 11.293 12 6.586 7.293 11.293"
-            />
-          </svg>
-        </a>
+        <div class="grid-item">
+          <img src="assets/poulet-fermier.webp" alt="Poulet fermier" />
+          <h3>Poulet fermier.</h3>
+        </div>
+        <div class="grid-item">
+          <img src="assets/roti-de-cheval.webp" alt="Rôti de cheval" />
+          <h3>Rôti de cheval.</h3>
+        </div>
       </div>
-    </main>
-    <footer>
-      <p>&copy;MeatBio tous droit réservés</p>
-    </footer>
-  </body>
+    </section>
+    <section id="contact">
+      <div id="form">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+          <label for="firstname">Nom:</label>
+          <input type="text" id="firstname" name="firstname" required />
+
+          <label for="lastname">Prénom:</label>
+          <input type="text" id="lastname" name="lastname" required />
+
+          <label for="phone">Téléphone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="mail" required />
+
+          <label for="message">Demande:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.9635633726716!2d4.828338911973699!3d45.75187641407758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4c5205e307%3A0x26778a49c589d46a!2s48%20Rue%20Franklin%2C%2069002%20Lyon%2C%20France!5e0!3m2!1sfr!2sau!4v1709616070213!5m2!1sfr!2sau"
+          style="border: 0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <div id="scrollToTop">
+      <a href="#"><svg viewBox="0 0 24 24">
+          <path d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z" />
+          <polygon points="7.293 15.293 8.707 16.707 12 13.414 15.293 16.707 16.707 15.293 12 10.586 7.293 15.293" />
+          <polygon points="7.293 11.293 8.707 12.707 12 9.414 15.293 12.707 16.707 11.293 12 6.586 7.293 11.293" />
+        </svg>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy;MeatBio tous droit réservés</p>
+  </footer>
+</body>
+
 </html>
