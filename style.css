@@ -164,7 +164,9 @@ main section#contact form textarea {
 main section#contact form button {
     background-color: var(--color1);
     border-radius: 8px;
-    color: white;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
     width: 100%;
     padding: 10px 0px;
     cursor: pointer;
