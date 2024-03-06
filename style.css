@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto&display=swap');
 
+/* Styles pour les mobiles */
 body {
     margin: 0;
     padding: 0;
@@ -7,12 +8,17 @@ body {
 
 }
 
+main div#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
 video {
-    /* object-position: 50% 50%;*/
     object-fit: cover;
     width: 100%;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    height: 100%;
 }
 
 header {
@@ -48,7 +54,7 @@ nav ul li a {
 }
 
 main section#presentation {
-    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -68,7 +74,7 @@ main section#presentation p {
 }
 
 main section#presentation img {
-    margin: 1rem;
+
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
@@ -184,6 +190,7 @@ footer {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    z-index: 200;
 }
 
 #scrollToTop svg {
