@@ -118,7 +118,7 @@ main section#produit div.grid-container div.grid-item p {
 
 
 main section#contact {
-    background-color: var(--color3);
+
     padding: 0.5rem;
     color: black;
     display: grid;
